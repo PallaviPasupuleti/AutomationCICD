@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="7" passed="2" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-08T15:11:39 IST" name="Suite" finished-at="2024-07-08T15:12:11 IST" duration-ms="32252">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginPageErrorValidation()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" name="LoginPageErrorValidation" class="pallavi.com.SeleniumFramework.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="ProductsTest.SubmitOrder(java.util.HashMap)[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" name="SubmitOrder" class="pallavi.com.SeleniumFramework.tests.ProductsTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-07-08T15:11:39 IST" name="Products" finished-at="2024-07-08T15:12:08 IST" duration-ms="28737">
+      <class name="pallavi.com.SeleniumFramework.tests.ProductsTest">
+        <test-method is-config="true" signature="launchingapplication()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" started-at="2024-07-08T15:11:40 IST" name="launchingapplication" finished-at="2024-07-08T15:11:45 IST" duration-ms="5463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingapplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" started-at="2024-07-08T15:11:45 IST" name="SubmitOrder" data-provider="getData" finished-at="2024-07-08T15:11:48 IST" duration-ms="3033" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ProductName=ZARA COAT 3, username=pallavihanish@gmail.com, Password=Pallavi@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-uae-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1151, 26). Other element would receive the click: <div _ngcontent-uae-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: MicrosoftEdge=126.0.2592.87)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6ebc413d6bcded820a67970715b573b5, clickElement {id=f.3447195BE7C3CEA644F1D260E636BC4F.d.E203263958492CC7318B2FC474D3889C.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.87, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52288}, msedge: {msedgedriverVersion: 126.0.2592.87 (883b9421f9ba..., userDataDir: /var/folders/41/8wqfx_b15rd...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52288/devtoo..., se:cdpVersion: 126.0.2592.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on mac (6ebc413d6bcded820a67970715b573b5)] -> css selector: [routerlink*='cart']]
+Session ID: 6ebc413d6bcded820a67970715b573b5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-uae-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1151, 26). Other element would receive the click: <div _ngcontent-uae-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: MicrosoftEdge=126.0.2592.87)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6ebc413d6bcded820a67970715b573b5, clickElement {id=f.3447195BE7C3CEA644F1D260E636BC4F.d.E203263958492CC7318B2FC474D3889C.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.87, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52288}, msedge: {msedgedriverVersion: 126.0.2592.87 (883b9421f9ba..., userDataDir: /var/folders/41/8wqfx_b15rd...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52288/devtoo..., se:cdpVersion: 126.0.2592.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on mac (6ebc413d6bcded820a67970715b573b5)] -> css selector: [routerlink*='cart']]
+Session ID: 6ebc413d6bcded820a67970715b573b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at pallavi.com.SeleniumFramework.AbstractComponents.AbstractComponent.ClickingOnCart(AbstractComponent.java:52)
+at pallavi.com.SeleniumFramework.tests.ProductsTest.SubmitOrder(ProductsTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" started-at="2024-07-08T15:11:49 IST" name="tearDown" finished-at="2024-07-08T15:11:49 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchingapplication()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" started-at="2024-07-08T15:11:49 IST" name="launchingapplication" finished-at="2024-07-08T15:11:53 IST" duration-ms="4144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingapplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" started-at="2024-07-08T15:11:53 IST" name="SubmitOrder" data-provider="getData" finished-at="2024-07-08T15:12:08 IST" duration-ms="14877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ProductName=ADIDAS ORIGINAL, username=hanish@gmail.com, Password=Hanish@1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" started-at="2024-07-08T15:12:08 IST" name="tearDown" finished-at="2024-07-08T15:12:08 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="OrdersPageVerification()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]" started-at="2024-07-08T15:12:08 IST" name="OrdersPageVerification" finished-at="2024-07-08T15:12:08 IST" depends-on-methods="pallavi.com.SeleniumFramework.tests.ProductsTest.SubmitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method pallavi.com.SeleniumFramework.tests.ProductsTest.OrdersPageVerification() on instance pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44 depends on not successfully finished methods 
+[pallavi.com.SeleniumFramework.tests.ProductsTest.SubmitOrder() on instance pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method pallavi.com.SeleniumFramework.tests.ProductsTest.OrdersPageVerification() on instance pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44 depends on not successfully finished methods 
+[pallavi.com.SeleniumFramework.tests.ProductsTest.SubmitOrder() on instance pallavi.com.SeleniumFramework.tests.ProductsTest@dbd8e44]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrdersPageVerification -->
+      </class> <!-- pallavi.com.SeleniumFramework.tests.ProductsTest -->
+    </test> <!-- Products -->
+    <test started-at="2024-07-08T15:11:39 IST" name="ErrorValidations" finished-at="2024-07-08T15:12:11 IST" duration-ms="32252">
+      <class name="pallavi.com.SeleniumFramework.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchingapplication()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:39 IST" name="launchingapplication" finished-at="2024-07-08T15:11:43 IST" duration-ms="4196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingapplication -->
+        <test-method retried="true" signature="LoginPageErrorValidation()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:43 IST" name="LoginPageErrorValidation" finished-at="2024-07-08T15:11:47 IST" duration-ms="3073" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorect email or password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pallavi.com.SeleniumFramework.tests.ErrorValidationsTest.LoginPageErrorValidation(ErrorValidationsTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:47 IST" name="tearDown" finished-at="2024-07-08T15:11:47 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchingapplication()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:47 IST" name="launchingapplication" finished-at="2024-07-08T15:11:52 IST" duration-ms="4784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingapplication -->
+        <test-method signature="LoginPageErrorValidation()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:52 IST" name="LoginPageErrorValidation" finished-at="2024-07-08T15:11:53 IST" duration-ms="936" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorect email or password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pallavi.com.SeleniumFramework.tests.ErrorValidationsTest.LoginPageErrorValidation(ErrorValidationsTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:53 IST" name="tearDown" finished-at="2024-07-08T15:11:53 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchingapplication()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:53 IST" name="launchingapplication" finished-at="2024-07-08T15:11:57 IST" duration-ms="3734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingapplication -->
+        <test-method signature="ProductNameErrorValidation()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:11:57 IST" name="ProductNameErrorValidation" finished-at="2024-07-08T15:12:11 IST" duration-ms="14120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductNameErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pallavi.com.SeleniumFramework.tests.ErrorValidationsTest@2a76840c]" started-at="2024-07-08T15:12:11 IST" name="tearDown" finished-at="2024-07-08T15:12:11 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pallavi.com.SeleniumFramework.tests.ErrorValidationsTest -->
+    </test> <!-- ErrorValidations -->
+  </suite> <!-- Suite -->
+</testng-results>
